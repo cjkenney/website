@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const Navbar = styled.div`
+  height: 50px;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
   background-color: red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
