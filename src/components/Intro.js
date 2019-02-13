@@ -3,19 +3,31 @@ import styled from 'styled-components';
 
 const IntroContainer = styled.section`
   height: 100vh;
-  background-color: blue;
+  background-color: #e0ebe8;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
+const Heading = styled.h1`
+  font-size: 2rem;
+  color: #45b29a;
+`;
+
+const HeadingDescription = styled.h1`
+  font-size: 2rem;
+  color: #45b29a;
+`;
+
 class Intro extends Component {
   render() {
     return (
       <IntroContainer id="intro">
-        <h1>Hi, I'm CJ</h1>
-        <h2>I'm a web developer from Minneapolis</h2>
+        <Heading>Hi, I'm CJ</Heading>
+        <HeadingDescription>
+          I'm a web developer from Minneapolis
+        </HeadingDescription>
       </IntroContainer>
     );
   }

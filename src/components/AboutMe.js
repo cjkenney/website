@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const StyledAboutMe = styled.section`
   height: 700px;
-  background-color: green;
 `;
 
 class AboutMe extends Component {
