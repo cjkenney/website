@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const IntroContainer = styled.section`
-  height: 1 vh;
+  height: 100vh;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 class Intro extends Component {

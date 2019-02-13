@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const NavContainer = styled.div`
+const Navbar = styled.div`
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: red;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -15,12 +19,12 @@ const Link = styled.a`
 class Nav extends Component {
   render() {
     return (
-      <NavContainer>
-        Logo
+      <Navbar>
+        CJ Kenney
         <Link href="#">About</Link>
         <Link href="#">Projects</Link>
         <Link href="#">Contact</Link>
-      </NavContainer>
+      </Navbar>
     );
   }
 }

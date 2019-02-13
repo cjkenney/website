@@ -1,17 +1,20 @@
 import React from 'react';
 import Nav from '../components/Nav';
 import Intro from '../components/Intro';
+import AboutMe from '../components/AboutMe';
 import styled, { createGlobalStyle } from 'styled-components';
 import { Helmet } from 'react-helmet';
 
 const GlobalStyle = createGlobalStyle`
 body {
-    margin: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 `;
 
 const Container = styled.div`
-  margin: 3rem auto;
+  margin: 0 auto;
   max-width: 600px;
 `;
 
@@ -24,9 +27,10 @@ export default () => (
       {/* TODO: Fix link */}
       <link rel="canonical" href="http://mysite.com/example" />
     </Helmet>
-    <Nav />
     <Container>
+      <Nav />
       <Intro />
+      <AboutMe />
     </Container>
   </div>
 );
